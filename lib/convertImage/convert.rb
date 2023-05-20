@@ -28,9 +28,6 @@ module ConvertImage
       tempfile.binmode
     end
 
-    def tempfile
-    end
-
     def read
       ImageList.new(file)
     end
