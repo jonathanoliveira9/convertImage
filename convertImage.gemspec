@@ -5,20 +5,16 @@ require_relative "lib/convertImage/version"
 Gem::Specification.new do |spec|
   spec.name = "convertImage"
   spec.version = ConvertImage::VERSION
-  spec.authors = ["jonathan.silva.impulso"]
-  spec.email = ["jonathan.silva.impulso@vindi.com.br"]
+  spec.authors = ["jonathanoliveirasilva"]
+  spec.email = ["jonathanoliveirasilva9@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Convert Image"
+  spec.description = "Convert Image"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -36,4 +32,16 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'factory_bot'
+  spec.add_dependency 'httparty'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'pry-remote'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'vcr'
+  spec.add_development_dependency 'webmock'
 end

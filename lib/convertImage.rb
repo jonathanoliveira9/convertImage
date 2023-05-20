@@ -6,3 +6,6 @@ module ConvertImage
   class Error < StandardError; end
   # Your code goes here...
 end
+
+require 'convertImage/base'
+require 'convertImage/convert'
