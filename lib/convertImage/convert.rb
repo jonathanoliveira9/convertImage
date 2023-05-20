@@ -8,13 +8,13 @@ module ConvertImage
     end
 
     def to_png
-      f = ImageList.new('kuma.png')
-      write(f, 'jpeg')
+      f = read
+      write(f, 'png')
     end
 
     def to_jpg
-      f = ImageList.new('kuma.png')
-      write(f, 'jpeg')
+      f = read
+      write(f, 'jpg')
     end
 
     def write(resource, format)
