@@ -1,4 +1,4 @@
-
+require 'securerandom'
 
 module ConvertImage
   class Convert < Base
@@ -23,7 +23,7 @@ module ConvertImage
       new_file = File.open(new_name)
       tempfile = Tempfile.new([new_name, ".#{format}"])
       tempfile.write(new_file.read)
-      File.delete(new_file)
+      #File.delete(new_file)
       tempfile.rewind
       tempfile.binmode
     end
